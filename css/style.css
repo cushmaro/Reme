@@ -2775,6 +2775,11 @@ h6 {
     }
 
     
+    /*ערן מנסה להוריד את הפיקסל המעצבן*/
+    .header_area.navbar_fixed.main_menu{
+      position: static;
+      top: -71px;
+    }
     
     
     
