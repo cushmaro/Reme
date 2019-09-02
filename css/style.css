@@ -2767,6 +2767,17 @@ h6 {
       color: #60bc0f;
       opacity: 1; }
 
+/*----------------------our part--------------------- */
+    
+    .navbar-brand.logo{
+      width: 150px;
+      padding: 0px;
+    }
+
+    
+    
+    
+    
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
