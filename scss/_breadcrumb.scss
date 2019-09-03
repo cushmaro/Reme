@@ -7,12 +7,14 @@
 	background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)),
 		url(../img/banner/home-banner.jpg) no-repeat scroll center center;
 	background-size: cover;
+
 	.banner_inner {
 		width: 100%;
 		display: flex;
 		.container {
 			vertical-align: middle;
 			align-self: center;
+
 		}
 		.banner_content {
 			color: #fff;

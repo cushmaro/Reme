@@ -49,7 +49,9 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #777777;
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -307,9 +309,13 @@ button:focus {
       align-self: center;
       text-align: center; }
       .home_banner_area .banner_inner .banner_content .upper_text {
-        font-size: 50px;
+        font-size: 100px;
+        font-family: Poppins;
         text-transform: uppercase;
-        color: #fdbb00; }
+        color: var(--icon);
+      }
+      
+      
         @media (max-width: 767px) {
           .home_banner_area .banner_inner .banner_content .upper_text {
             font-size: 35px; } }
@@ -2781,6 +2787,11 @@ h6 {
       top: -71px;
     }
     
+    
+    .home_banner_area.upper_text{
+      font-size: 100px;
+      
+    }
     
     
 /*---------------------------------------------------- */
