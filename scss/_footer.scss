@@ -1,6 +1,23 @@
 /*============== footer-area css ===============*/
 .footer-area {
 	background: #091b27;
+	padding-top: 125px;
+
+	.contact-us{
+		position: static;
+		text-align: center;
+
+
+	}
+
+	.contact-col{
+		display: inline-block;
+		margin-left: 8%;
+		top: 0px;
+		vertical-align: top;
+		height: 100%;
+
+	}
 }
 .single-footer-widget {
 	p {
@@ -86,3 +103,5 @@
 		}
 	}
 }
+
+

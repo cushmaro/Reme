@@ -112,10 +112,18 @@ button:focus {
   margin-top: 25px;
 }
 
+.primary2-color {
+  color: #fdbb00 !important;
+}
+
+.primary1-color {
+  color: #60bc0f !important;
+}
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 130px 0px;
+  padding: 0px;
 }
 @media (max-width: 991px) {
   .section_gap {
@@ -149,7 +157,7 @@ button:focus {
 ============================================================================================ */
 .main_title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 @media (max-width: 991px) {
   .main_title {
@@ -200,8 +208,9 @@ button:focus {
   transition: all 300ms linear 0s;
 }
 .primary_btn:hover {
-  background: transparent;
-  color: #60bc0f;
+  transform: scale(0.95);
+  color: #fff;
+  background-color: #60bc0f;
 }
 .primary_btn.yellow_btn {
   background: #fdbb00 !important;
@@ -209,7 +218,39 @@ button:focus {
   color: #000000;
 }
 .primary_btn.yellow_btn:hover {
-  background: transparent !important;
+  transform: scale(0.95);
+  color: #fff;
+}
+
+.create-group-btn {
+  padding: 5px 50px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-left: 39%;
+}
+
+.function_btn {
+  display: inline-block;
+  background: #60bc0f;
+  padding: 0px 50px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 48px;
+  border: 1px solid #60bc0f;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 300ms linear 0s;
+  margin-left: 13%;
+}
+.function_btn:hover {
+  transform: scale(0.95);
+  color: #fff;
+  background-color: #60bc0f;
 }
 
 /*---------------------------------------------------- */
@@ -331,7 +372,7 @@ button:focus {
 .header_area.navbar_fixed .main_menu {
   position: fixed;
   width: 100%;
-  top: -70px;
+  top: -71px;
   left: 0;
   right: 0;
   background: #222222;
@@ -370,8 +411,9 @@ button:focus {
   text-align: center;
 }
 .home_banner_area .banner_inner .banner_content .upper_text {
-  font-size: 50px;
+  font-size: 100px;
   text-transform: uppercase;
+  font-weight: bold;
   color: #fdbb00;
 }
 @media (max-width: 767px) {
@@ -399,6 +441,10 @@ button:focus {
     margin-right: 0;
     margin-bottom: 15px;
   }
+}
+.home_banner_area .banner_inner .banner_content .banner_content_text {
+  opacity: 0.3;
+  margin-bottom: 200px;
 }
 
 .banner_area {
@@ -626,51 +672,6 @@ button:focus {
 
 /* End Our Major Cause Area css
 ============================================================================================ */
-/* Start recent Events css
-=========================================================================================== */
-.function_area {
-  padding-bottom: 70px;
-}
-@media (max-width: 991px) {
-  .function_area {
-    padding-bottom: 10px;
-  }
-}
-
-.function_area .function_container{
-  /*width: 100%;*/
-}
-
-
-@media (max-width: 991px) {
-  .event-details-area .condition-right h2 {
-    margin-top: 40px;
-  }
-}
-.event-details-area .condition-right ul {
-  padding-left: 0px;
-  margin-top: 30px;
-}
-.event-details-area .condition-right li {
-  list-style: none;
-  margin-bottom: 5px;
-}
-.event-details-area .condition-right li::before {
-  font: normal normal normal 14px/1 FontAwesome;
-  margin-right: 20px;
-}
-.event-details-area .condition-right li:nth-child(1)::before {
-  content: "";
-}
-.event-details-area .condition-right li:nth-child(2)::before {
-  content: "";
-}
-.event-details-area .condition-right li:nth-child(3)::before {
-  content: "";
-}
-
-/* recent Events css End
-=========================================================================================== */
 /* Team Area css
 ============================================================================================ */
 .team_area {
@@ -728,6 +729,10 @@ button:focus {
   background: #60bc0f;
   color: #ffffff;
   border: 1px solid #60bc0f;
+}
+.team_item:hover .team_img {
+  opacity: 0.7;
+  transition: all 300ms linear 0s;
 }
 .team_item:hover .team_img:before {
   opacity: 1;
@@ -915,12 +920,23 @@ button:focus {
 
 /* End Subscribe Area css
 ============================================================================================ */
+.home_banner_area .banner_inner .banner_content .upper_text {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #fdbb00;
+}
+
+@media (max-width: 767px) {
+  .home_banner_area .banner_inner .banner_content .upper_text {
+    font-size: 45px;
+  }
+}
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .blog_btn {
   border: 1px solid #eeeeee;
   background: #f9f9ff;
-  padding: 0px 42px;
+  padding: 0px 32px;
   font-size: 13px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -3280,6 +3296,18 @@ h6 {
 /*============== footer-area css ===============*/
 .footer-area {
   background: #091b27;
+  padding-top: 125px;
+}
+.footer-area .contact-us {
+  position: static;
+  text-align: center;
+}
+.footer-area .contact-col {
+  display: inline-block;
+  margin-left: 8%;
+  top: 0px;
+  vertical-align: top;
+  height: 100%;
 }
 
 .single-footer-widget p {
