@@ -1,8 +1,12 @@
+/*====================VARIABLES=====================*/
+
 var modal = document.getElementById('id-modal');
 var addMember = document.getElementById('add-member');
 var modalCancelBtn =document.getElementById(  'cancel-member');
+var groupName = document.getElementById('group-name').value;
 
 
+/*====================FUNCTION=====================*/
 
 function showModal() {
   modal.style.display='block';
@@ -11,6 +15,16 @@ function showModal() {
 function hideModal(){
   modal.style.display='none';
 }
+
+function showGroupName{
+
+}
+
+function addToMemberList{
+
+}
+
+
 
 modalCancelBtn.addEventListener("click", hideModal);
 addMember.addEventListener("click", showModal);

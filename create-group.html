@@ -76,10 +76,10 @@
             
                 <section class="new-group-section">
                     <div class="new-group-container">
-                        <form class="new-group">
+                        <form class="new-group" action="#">
                     
-                            <label> NAME: </label>
-                            <input type="text" class="group-name group-input" placeholder="Name">
+                            <label for="group-name"> NAME: </label>
+                            <input type="text" class="group-input" id="group-name" placeholder="Name">
                             
                             <label> DESCRIPTION: </label>
                             <input type="text" class="group-description group-input" placeholder="Description">
@@ -95,6 +95,8 @@
                                 <a id="add-member"><img class="scale-hover" src="img/plus.png" alt="plus"> add member</a>
                             </label>
                             
+                            <input type="submit" id="submit-group" class="primary_btn"></input>
+                            
                         </form>
                     </div>
                 </section>
@@ -103,7 +105,9 @@
                 <section class="group-members-section">
                     <div class="members-container">
                         <div class="member-list">
-                            <img src="img/icons/Reme-icon-docs.png"><br><br>
+                            <img src="img/icons/Reme-icon-docs.png"><br>
+                            <p id="display-group-name"></p>
+                            <br>
                             <ol>
                                 <li>eran</li>
                                 <li>amit</li>
@@ -139,9 +143,12 @@
                     </form>
                 </div>
             </section>
-    
-    <!--================end  MODAL======================-->
         </section>
+
+    <!--================end  MODAL======================-->
+
+    <!--================end  CREATE GROUP======================-->
+    
         
 <!--================ Start footer Area  =================-->
         <footer>
