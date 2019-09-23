@@ -5,7 +5,7 @@
 	min-height: 900px;
 	display: flex;
 	background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)),
-		url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+	url(../img/banner/home-banner.jpg) no-repeat scroll center center;
 	background-size: cover;
 
 	.banner_inner {
@@ -23,7 +23,6 @@
 			text-align: center;
 			.upper_text {
 				font-size: 50px;
-				text-transform: uppercase;
 				color: $primary-color2;
 				@media (max-width: 767px) {
 					font-size: 35px;
@@ -36,7 +35,6 @@
 				font-weight: bold;
 				font-family: $title-font;
 				line-height: 70px;
-				text-transform: uppercase;
 				margin-bottom: 20px;
 			}
 			p {
