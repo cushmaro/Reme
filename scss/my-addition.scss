@@ -5,8 +5,24 @@
 
 /*===================CREATE GROUP=================*/
 
-.new-group-container{
-  width: 1000px !important;
+.new-group-container, .members-container{
+  display: inline-block;
+  width: 100%;
+  margin: 0px 10px 30px 50px;
+}
+
+.new-group-section, .group-members-section{
+
+  display: inline-block;
+  width: 49%;
+}
+
+.group-members-section{
+  float: right;
+
+  .member-list{
+    padding: 20px;
+  }
 }
 
 /*------------------FORM START-----------------*/
@@ -21,7 +37,7 @@
     .group-input {
       display: block;
       margin-bottom: 10px;
-      width: 20%;
+      width: 70%;
     }
 
     #add-member{
@@ -39,11 +55,15 @@
       margin-top: 30px;
     }
 
+    form{
+
+    }
+
     .upload-img-container{
       height: 152px;
       width:152px;
       border: 1px solid black;
-      margin: 10px auto;
+      margin: 10px;
     }
   }
 }

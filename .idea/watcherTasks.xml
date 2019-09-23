@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectTasksOptions">
+  <component name="ProjectTasksOptions" suppressed-tasks="SCSS">
     <TaskOptions isEnabled="true">
       <option name="arguments" value="$FileName$:$FileNameWithoutExtension$.css" />
       <option name="checkSyntaxErrors" value="true" />
@@ -14,13 +14,9 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="sass.cmd" />
+      <option name="program" value="sass" />
       <option name="runOnExternalChanges" value="true" />
-<<<<<<< HEAD
-      <option name="scopeName" value="Changed Files" />
-=======
       <option name="scopeName" value="Project Files" />
->>>>>>> d56abb861620259be548af5622588f01f3105033
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />

@@ -18,9 +18,10 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="scss/style.css">
     </head>
+    
     <body>
         
-        <!--================ Start Header Menu Area =================-->
+<!--================ Start Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
                 <div class="container">
@@ -52,11 +53,11 @@
                 </div>
             </div>
         </header>
-        <!--================ End Header Menu Area =================-->
+<!--================ End Header Menu Area =================-->
         
         
         
-        <!--================ Home Banner Area =================-->
+<!--================ Home Banner Area =================-->
         <section class="banner_area">
             <div class="banner_inner d-flex align-items-center">
                 <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
@@ -68,81 +69,81 @@
                 </div>
             </div>
         </section>
-        <!--================ End Home Banner Area =================-->
+<!--================ End Home Banner Area =================-->
 
+        
         <section class="create-group">
-        
-        <div class="container">
-        <section class="new-group-section">
-            <div class="new-group-container">
-                <form class="new-group">
-                    
-                    <label> NAME: </label>
-                    <input type="text" class="group-name group-input" placeholder="Name">
-                    
-                    <label> DESCRIPTION: </label>
-                    <input type="text" class="group-description group-input" placeholder="Description">
-                    
-                    <label for="group-image"> </label>
-                        Select image to upload:
-                        <input class="group-input" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
-                        <div class="upload-img-container">
-                            <img id="my-img" src="#" alt=". no image yet" />
-                        </div>
-                        <input class="group-input" type="submit" value="Upload Image" name="submit">
-                    
-                    <label>
-                        <a id="add-member"><img class="scale-hover" src="img/plus.png"> add member</a>
-                    </label>
-                    
-                </form>
-            </div>
-        </section>
-
-
-        <!--================start MODAL======================-->
-        
-
-        <div id="id-modal" class="member-modal">
-    
-            <form class="member-modal-content animate" action="/action_page.php">
-                
-                <div class="container">
-                    
-                    <div class="imgcontainer">
-                    <label for="member-img">Add Image</label>
-                    <input type="file"  id="member-img" accept="image/gif, image/jpeg, image/png">
-                </div>
-                    <label for="fname"><b>Member Full Name</b></label>
-                    <input type="text" placeholder="Full Name" id="fname" required>
             
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" id="psw" required>
+                <section class="new-group-section">
+                    <div class="new-group-container">
+                        <form class="new-group">
+                    
+                            <label> NAME: </label>
+                            <input type="text" class="group-name group-input" placeholder="Name">
+                            
+                            <label> DESCRIPTION: </label>
+                            <input type="text" class="group-description group-input" placeholder="Description">
+                            
+                            <label for="group-image"> </label>
+                                Select image to upload:
+                                <input class="group-input" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
+                                <div class="upload-img-container">
+                                    <img id="my-img" src="#" alt=". no image yet" />
+                                </div>
+                            
+                            <label>
+                                <a id="add-member"><img class="scale-hover" src="img/plus.png" alt="plus"> add member</a>
+                            </label>
+                            
+                        </form>
+                    </div>
+                </section>
             
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-        
-                <div class="container">
-                    <button type="submit" class="primary_btn" id="submit-member">Submit Member  </button>
-                    <button type="button" class="primary_btn yellow_btn" id="cancel-member">Cancel</button>
-                </div>
-            </form>
-        </div>
-        
-        
-        <!--================end  MODAL======================-->
         
                 <section class="group-members-section">
                     <div class="members-container">
-                        <img src="img/icons/Reme-icon.png">
+                        <div class="member-list">
+                            <img src="img/icons/Reme-icon-docs.png"><br><br>
+                            <ol>
+                                <li>eran</li>
+                                <li>amit</li>
+                            </ol>
+                        </div>
                     </div>
                 </section>
-            </div>
+    
+    <!--================start MODAL======================-->
+    
+                <section class="modal-section">
+                <div id="id-modal" class="member-modal">
+                    <form class="member-modal-content animate" action="/action_page.php">
+                        <div class="container">
+                            <div class="imgcontainer">
+                                <label for="member-img">Add Image</label>
+                                <input type="file"  id="member-img" accept="image/gif, image/jpeg, image/png">
+                            </div>
+                            <label for="fname"><b>Member Full Name</b></label>
+                            <input type="text" placeholder="Full Name" id="fname" required>
+                    
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="psw" required>
+                    
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <div class="container">
+                            <button type="submit" class="primary_btn" id="submit-member">Submit Member  </button>
+                            <button type="button" class="primary_btn yellow_btn" id="cancel-member">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    
+    <!--================end  MODAL======================-->
         </section>
         
-        <!--================ Start footer Area  =================-->
+<!--================ Start footer Area  =================-->
         <footer>
             <div class="footer-area">
                 <div class="container">
