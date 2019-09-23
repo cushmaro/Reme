@@ -22,7 +22,13 @@
 			align-self: center;
 			text-align: center;
 			.upper_text {
+<<<<<<< HEAD
 				font-size: 50px;
+=======
+				font-size: 100px;
+				text-transform: uppercase;
+				font-weight: bold;
+>>>>>>> d56abb861620259be548af5622588f01f3105033
 				color: $primary-color2;
 				@media (max-width: 767px) {
 					font-size: 35px;
@@ -47,6 +53,12 @@
 					margin-right: 0;
 					margin-bottom: 15px;
 				}
+			}
+
+			.banner_content_text{
+				opacity: 0.3;
+				margin-bottom: 200px;
+
 			}
 		}
 	}
@@ -94,3 +106,7 @@
 
 /* End Home Banner Area css
 ============================================================================================ */
+
+
+//my addition
+
