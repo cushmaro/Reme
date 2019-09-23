@@ -7,6 +7,7 @@
         <link rel="icon" href="img/icons/icon-green-24px.png" type="image/png">
         <title>Reme.</title>
         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/my-addition.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -15,6 +16,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="scss/style.css">
     </head>
     <body>
         
@@ -67,24 +69,79 @@
             </div>
         </section>
         <!--================ End Home Banner Area =================-->
+
+        <section class="create-group">
         
-        
+        <div class="container">
         <section class="new-group-section">
-            <div class="container">
+            <div class="new-group-container">
                 <form class="new-group">
                     
-                    <input class="group-name group-input" placeholder="Name">
-                    <input class="group-description group-input" placeholder="Description">
-                    Select image to upload:
-                    <input type="file" name="fileToUpload" id="fileToUpload">
-                    <input type="submit" value="Upload Image" name="submit">
+                    <label> NAME: </label>
+                    <input type="text" class="group-name group-input" placeholder="Name">
+                    
+                    <label> DESCRIPTION: </label>
+                    <input type="text" class="group-description group-input" placeholder="Description">
+                    
+                    <label for="group-image"> </label>
+                        Select image to upload:
+                        <input class="group-input" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
+                        <div class="upload-img-container">
+                            <img id="my-img" src="#" alt=". no image yet" />
+                        </div>
+                        <input class="group-input" type="submit" value="Upload Image" name="submit">
+                    
+                    <label>
+                        <a id="add-member"><img class="scale-hover" src="img/plus.png"> add member</a>
+                    </label>
                     
                 </form>
             </div>
         </section>
 
 
+        <!--================start MODAL======================-->
+        
 
+        <div id="id-modal" class="member-modal">
+    
+            <form class="member-modal-content animate" action="/action_page.php">
+                
+                <div class="container">
+                    
+                    <div class="imgcontainer">
+                    <label for="member-img">Add Image</label>
+                    <input type="file"  id="member-img" accept="image/gif, image/jpeg, image/png">
+                </div>
+                    <label for="fname"><b>Member Full Name</b></label>
+                    <input type="text" placeholder="Full Name" id="fname" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="psw" required>
+            
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+        
+                <div class="container">
+                    <button type="submit" class="primary_btn" id="submit-member">Submit Member  </button>
+                    <button type="button" class="primary_btn yellow_btn" id="cancel-member">Cancel</button>
+                </div>
+            </form>
+        </div>
+        
+        
+        <!--================end  MODAL======================-->
+        
+                <section class="group-members-section">
+                    <div class="members-container">
+                        <img src="img/icons/Reme-icon.png">
+                    </div>
+                </section>
+            </div>
+        </section>
+        
         <!--================ Start footer Area  =================-->
         <footer>
             <div class="footer-area">
@@ -175,5 +232,6 @@
         <script src="js/jquery.ajaxchimp.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+        <script src="js/my-addition.js"></script>
     </body>
 </html>

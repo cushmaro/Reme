@@ -1,0 +1,144 @@
+.scale-hover:hover{
+  @include transition();
+  transform: scale(0.95);
+}
+
+/*===================CREATE GROUP=================*/
+
+.new-group-container{
+  width: 1000px !important;
+}
+
+/*------------------FORM START-----------------*/
+
+.new-group-section{
+
+  .new-group{
+
+    color: $primary-color;
+    font-weight: bold;
+
+    .group-input {
+      display: block;
+      margin-bottom: 10px;
+      width: 20%;
+    }
+
+    #add-member{
+      cursor: pointer;
+      font-size: 25px;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+
+    label{
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    .upload-img-container{
+      height: 152px;
+      width:152px;
+      border: 1px solid black;
+      margin: 10px auto;
+    }
+  }
+}
+
+
+
+/*------------------FORM END---------------------*/
+
+
+/*------------------MODAL START-----------------*/
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#submit-member, #cancel-member{
+  width: 49%;
+}
+
+#cancel-member{
+  float: right;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.member-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.member-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  min-width: 700px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*------------------MODAL END-----------------*/

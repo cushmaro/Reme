@@ -80,10 +80,11 @@
 	&.yellow_btn {
 		background: $primary-color2 !important;
 		border: 1px solid $primary-color2 !important;
-		color: #000000;
+		color: #fff;
 		&:hover {
 			transform: scale(0.95);
 			color: #fff;
+			background-color: $primary-color2 !important;
 		}
 	}
 }
