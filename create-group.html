@@ -78,24 +78,34 @@
                     <div class="new-group-container">
                         <form class="new-group" action="#">
                     
-                            <label for="group-name"> NAME: </label>
-                            <input type="text" class="group-input" id="group-name" placeholder="Name">
-                            
-                            <label> DESCRIPTION: </label>
-                            <input type="text" class="group-description group-input" placeholder="Description">
-                            
-                            <label for="group-image"> </label>
-                                Select image to upload:
-                                <input class="group-input" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
+                            <div class="top-part">
+                                <div class="group-name-part">
+                                    <label for="group-name"> NAME: </label>
+                                    <input type="text" class="group-input" id="group-name" placeholder="Name">
+                                </div>
+                                
+                                <label for="group-image"> </label>
                                 <div class="upload-img-container">
                                     <img id="my-img" src="#" alt=". no image yet" />
                                 </div>
+                                Select image to upload:
+                                <input class="group-input" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
+                                
+                            </div>
+                            
+                            
+                            <label for="group-description"> DESCRIPTION: </label>
+                            <textarea type="text" class="group-input" id="group-description" placeholder="type group's description"></textarea>
+                            
+                            
                             
                             <label>
-                                <a id="add-member"><img class="scale-hover" src="img/plus.png" alt="plus"> add member</a>
+                                <a id="add-member"><img src="img/plus.png" alt="plus"> add member</a>
                             </label>
+    
+                            <br>
                             
-                            <input type="submit" id="submit-group" class="primary_btn"></input>
+                            <input type="submit" id="submit-group" class="primary_btn">
                             
                         </form>
                     </div>
@@ -104,11 +114,11 @@
         
                 <section class="group-members-section">
                     <div class="members-container">
-                        <div class="member-list">
-                            <img src="img/icons/Reme-icon-docs.png"><br>
-                            <p id="display-group-name"></p>
+                        <div class="member-list-container">
                             <br>
-                            <ol>
+                            Group Name :  <span id="display-group-name"> <small>no name yet</small></span>
+                            <br><br>
+                            <ol id="member-list">
                                 <li>eran</li>
                                 <li>amit</li>
                             </ol>
@@ -120,17 +130,17 @@
     
                 <section class="modal-section">
                 <div id="id-modal" class="member-modal">
-                    <form class="member-modal-content animate" action="/action_page.php">
+                    <form class="member-modal-content animate" action="">
                         <div class="container">
                             <div class="imgcontainer">
                                 <label for="member-img">Add Image</label>
                                 <input type="file"  id="member-img" accept="image/gif, image/jpeg, image/png">
                             </div>
-                            <label for="fname"><b>Member Full Name</b></label>
-                            <input type="text" placeholder="Full Name" id="fname" required>
+                            <label for="mfname"><b>Member Full Name</b></label>
+                            <input type="text" placeholder="Full Name" id="mfname" required>
                     
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" id="psw" required>
+                            <label for="member-details"><b>Password</b></label>
+                            <textarea placeholder="Enter Password" id="member-details"></textarea>
                     
                             <label>
                                 <input type="checkbox" checked="checked" name="remember"> Remember me

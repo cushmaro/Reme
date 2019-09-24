@@ -2699,16 +2699,11 @@ h6 {
 }
 
 /*---------------------------------------------------- */
-.scale-hover:hover {
-  transition: all 300ms linear 0s;
-  transform: scale(0.95);
-}
-
 /*===================CREATE GROUP=================*/
 .new-group-container, .members-container {
   display: inline-block;
   width: 100%;
-  margin: 0px 10px 30px 50px;
+  margin: 0 10px 30px 50px;
 }
 
 .new-group-section, .group-members-section {
@@ -2716,22 +2711,36 @@ h6 {
   width: 49%;
 }
 
+/*------------------MEMBER START-----------------*/
 .group-members-section {
   float: right;
 }
-.group-members-section .member-list {
+.group-members-section .member-list-container {
   padding: 20px;
 }
+.group-members-section .fancy-group-name {
+  font-size: 25px;
+  color: #60bc0f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+/*------------------MEMBER END-----------------*/
 /*------------------FORM START-----------------*/
 .new-group-section .new-group {
   color: #60bc0f;
   font-weight: bold;
+  width: 70%;
 }
 .new-group-section .new-group .group-input {
   display: block;
   margin-bottom: 10px;
-  width: 70%;
+  width: 100%;
+}
+.new-group-section .new-group .group-name-part {
+  width: 60%;
+  float: right;
+  margin-top: 37px;
 }
 .new-group-section .new-group #add-member {
   cursor: pointer;
@@ -2746,7 +2755,7 @@ h6 {
   margin-top: 30px;
 }
 .new-group-section .new-group #submit-group {
-  width: 80%;
+  width: 100%;
 }
 .new-group-section .new-group .upload-img-container {
   height: 152px;

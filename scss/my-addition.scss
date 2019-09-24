@@ -1,44 +1,64 @@
-.scale-hover:hover{
-  @include transition();
-  transform: scale(0.95);
-}
+
 
 /*===================CREATE GROUP=================*/
 
 .new-group-container, .members-container{
   display: inline-block;
   width: 100%;
-  margin: 0px 10px 30px 50px;
+  margin: 0 10px 30px 50px;
+
 }
 
 .new-group-section, .group-members-section{
-
   display: inline-block;
   width: 49%;
 }
 
+
+/*------------------MEMBER START-----------------*/
+
 .group-members-section{
   float: right;
 
-  .member-list{
+  .member-list-container{
     padding: 20px;
   }
+
+  .fancy-group-name{
+    font-size: 25px;
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
 }
+/*------------------MEMBER END-----------------*/
+
+
 
 /*------------------FORM START-----------------*/
 
 .new-group-section{
 
+
   .new-group{
 
     color: $primary-color;
     font-weight: bold;
+    width: 70%;
 
     .group-input {
       display: block;
       margin-bottom: 10px;
-      width: 70%;
+      width: 100%;
     }
+
+    .group-name-part{
+      width: 60%;
+      float: right;
+      margin-top: 37px;
+    }
+
 
     #add-member{
       cursor: pointer;
@@ -56,7 +76,7 @@
     }
 
     #submit-group{
-      width: 80%;
+      width: 100%;
     }
 
     .upload-img-container{

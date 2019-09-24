@@ -1,12 +1,22 @@
 /*====================VARIABLES=====================*/
 
-var modal = document.getElementById('id-modal');
-var addMember = document.getElementById('add-member');
-var modalCancelBtn =document.getElementById(  'cancel-member');
-var groupName = document.getElementById('group-name').value;
+let modal = document.getElementById('id-modal');
+let addMemberBtn = document.getElementById('add-member');
+let modalCancelBtn =document.getElementById(  'cancel-member');
+let memberName = document.getElementById('mfname');
+let memberList = document.getElementById('member-list');
+let submitMember = document.getElementById('submit-member');
+
+let groupName = document.getElementById('group-name');
+let groupNameToFill = document.getElementById('display-group-name');
+
 
 
 /*====================FUNCTION=====================*/
+
+function clearText(element) {
+  element.innerText = "";
+}
 
 function showModal() {
   modal.style.display='block';
@@ -16,18 +26,27 @@ function hideModal(){
   modal.style.display='none';
 }
 
-function showGroupName{
+//shows the group name in the member area
+function showGroupName(){
+   groupNameToFill.innerText = groupName.value;
+   groupNameToFill.classList.add('fancy-group-name');
+}
+
+//add member to the list when 'submit'
+function addToMemberList(){
+  let li = document.createElement('li');
+  li.innerText = memberName.value;
+  memberList.appendChild(li);
+
+  hideModal();
+  clearText(memberName);
 
 }
 
-function addToMemberList{
-
-}
-
-
-
+submitMember.addEventListener("click", addToMemberList);
+groupName.addEventListener("focusout", showGroupName);
 modalCancelBtn.addEventListener("click", hideModal);
-addMember.addEventListener("click", showModal);
+addMemberBtn.addEventListener("click", showModal);
 
 
 // When the user clicks anywhere outside of the modal, close it
