@@ -2701,9 +2701,7 @@ h6 {
 /*---------------------------------------------------- */
 /*===================CREATE GROUP=================*/
 .new-group-container, .members-container {
-  display: inline-block;
-  width: 100%;
-  margin: 0 10px 30px 50px;
+  margin: 10px 10px 30px 50px;
 }
 
 .new-group-section, .group-members-section {
@@ -2730,7 +2728,20 @@ h6 {
 .new-group-section .new-group {
   color: #60bc0f;
   font-weight: bold;
-  width: 70%;
+  padding: 5px;
+  border: 1px solid #888;
+  width: 60%;
+  min-width: 400px;
+}
+.new-group-section .new-group .create-title {
+  text-align: center;
+  vertical-align: center;
+  color: #fff;
+  background-color: #fdbb00;
+  padding: 16px;
+}
+.new-group-section .new-group .top-part label {
+  margin-top: 0 !important;
 }
 .new-group-section .new-group .group-input {
   display: block;
@@ -2738,9 +2749,8 @@ h6 {
   width: 100%;
 }
 .new-group-section .new-group .group-name-part {
-  width: 60%;
+  width: 49%;
   float: right;
-  margin-top: 37px;
 }
 .new-group-section .new-group #add-member {
   cursor: pointer;
@@ -2751,7 +2761,6 @@ h6 {
 }
 .new-group-section .new-group label {
   display: block;
-  margin-bottom: 10px;
   margin-top: 30px;
 }
 .new-group-section .new-group #submit-group {
@@ -2760,16 +2769,20 @@ h6 {
 .new-group-section .new-group .upload-img-container {
   height: 152px;
   width: 152px;
-  border: 1px solid black;
+  border: 1px dashed black;
   margin: 10px;
+}
+
+.complete-border {
+  border: 1.5px solid greenyellow !important;
 }
 
 /*------------------FORM END---------------------*/
 /*------------------MODAL START-----------------*/
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 5px 10px;
   margin: 8px 0;
   display: block;
   border: 1px solid #ccc;
@@ -2784,10 +2797,20 @@ input[type=text], input[type=password] {
   float: right;
 }
 
+#member-details {
+  width: 100%;
+}
+
 /* Center the image and position the close button */
-.imgcontainer {
+.imgcontainer, .member-details-container {
+  display: inline-block;
   margin: 24px 0 12px 0;
   position: relative;
+  width: 45%;
+}
+
+.member-details-container {
+  top: 0;
 }
 
 .container {
@@ -2830,6 +2853,11 @@ span.psw {
   width: 50%;
   /* Could be more or less, depending on screen size */
   min-width: 700px;
+}
+.member-modal-content .upload-img-container {
+  border: 1px dashed black;
+  height: 302px;
+  width: 262px;
 }
 
 /* Add Zoom Animation */

@@ -9,6 +9,18 @@ let submitMember = document.getElementById('submit-member');
 
 let groupName = document.getElementById('group-name');
 let groupNameToFill = document.getElementById('display-group-name');
+let memberAge = document.getElementById('member-age');
+
+
+
+/*====================EVENTS======================*/
+
+
+submitMember.addEventListener("click", addToMemberList);
+groupName.addEventListener("focusout", showGroupName);
+modalCancelBtn.addEventListener("click", hideModal);
+addMemberBtn.addEventListener("click", showModal);
+memberAge.addEventListener("focusout", validationAge);
 
 
 
@@ -28,25 +40,29 @@ function hideModal(){
 
 //shows the group name in the member area
 function showGroupName(){
-   groupNameToFill.innerText = groupName.value;
-   groupNameToFill.classList.add('fancy-group-name');
+   if (groupName.value !== "") {
+     groupNameToFill.innerText = groupName.value;
+     groupNameToFill.classList.add('fancy-group-name');
+     completedInput(groupName);
+   }
 }
 
 //add member to the list when 'submit'
-function addToMemberList(){
+function addToMemberList() {
   let li = document.createElement('li');
+
+  if (memberName.value !== "" ) {
+    
   li.innerText = memberName.value;
   memberList.appendChild(li);
 
   hideModal();
-  clearText(memberName);
 
+  }
+  else {
+    alert("Please enter Name!");
+  }
 }
-
-submitMember.addEventListener("click", addToMemberList);
-groupName.addEventListener("focusout", showGroupName);
-modalCancelBtn.addEventListener("click", hideModal);
-addMemberBtn.addEventListener("click", showModal);
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -54,20 +70,54 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
-//display the uploaded image
+
+//display the uploaded image X2
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
 
     reader.onload = function (e) {
-      $('#my-img')
+        $('#my-img')
         .attr('src', e.target.result)
         .width(150)
         .height(150);
     };
 
     reader.readAsDataURL(input.files[0]);
+  }
+}
+//duplicate the function above
+function readURL2(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('#my-img2')
+        .attr('src', e.target.result)
+        .width(260)
+        .height(300);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+function completedInput(element) {
+  element.classList.add('complete-border');
+}
+
+function validationAge() {
+  let age =this.value;
+  if (! (age > 0 && age < 99)){
+    alert("Please only enter numeric characters only for your Age! (Allowed input:0-9)");
+  }
+}
+
+function validNotEmpty() {
+  let input = memberName.value;
+  if (input === ""){
+    alert("Please enter Name!");
   }
 }
