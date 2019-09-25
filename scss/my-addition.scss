@@ -160,12 +160,18 @@ input[type=text]{
   width: 45%;
 }
 
-.member-details-container{
+.imgcontainer{
+  width: 35%;
+}
 
+.img-modal, .details-modal{
+  display: inline;
+}
+
+.member-details-container{
   input{
     display: inline-block;
   }
-  top: 0;
 }
 
 #member-age{

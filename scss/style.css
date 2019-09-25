@@ -2823,9 +2823,14 @@ input[type=text] {
   width: 45%;
 }
 
-.member-details-container {
-  top: 0;
+.imgcontainer {
+  width: 35%;
 }
+
+.img-modal, .details-modal {
+  display: inline;
+}
+
 .member-details-container input {
   display: inline-block;
 }
