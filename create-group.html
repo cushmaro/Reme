@@ -82,21 +82,22 @@
                                 <div class="create-title">CREATE A GROUP</div>
                         
                                 <div class="top-part">
-                                    <div class="group-name-part">
+                                    <div class="group-name-part"><br>
                                         <label for="group-name">GROUP NAME: </label>
                                         <input type="text" class="group-input" id="group-name" placeholder="Name">
                                     </div>
                                     
-                                    <label for="group-image"> </label>
-                                    <div class="upload-img-container">
-                                        <img id="my-img" src="#"  alt=". no image yet"/>
+                                    <div class="upload-img">
+                                    <label for="group-image">
+                                        <label>GROUP IMAGE: </label>
+                                        <img id="my-img" src="img/create-group/add-image.png"  alt=""/>
+                                    </label>
+                                    <input class="group-input disp-none" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
                                     </div>
-                                    Select image to upload:
-                                    <input class="group-input" type="file" name="group-image" id="group-image" accept="image/gif, image/jpeg, image/png" onchange="readURL(this)">
                                     
                                 </div>
                                 
-                                
+                                <div class="bottom-part">
                                 <label for="group-description">GROUP DESCRIPTION: </label>
                                 <textarea type="text" class="group-input" id="group-description" placeholder="type group's description"></textarea>
                                 
@@ -105,10 +106,11 @@
                                 <label>
                                     <a id="add-member"><img src="img/plus.png" alt="plus"> add member</a>
                                 </label>
-        
-                                <br>
                                 
-                                <input type="submit" id="submit-group" class="primary_btn">
+                                <br>
+                                </div>
+                                
+                                <input type="submit" id="submit-group" class="primary_btn group-input">
                                 
                             </form>
                         </div>
@@ -133,20 +135,20 @@
     
                 <section class="modal-section">
                 <div id="id-modal" class="member-modal">
-                    <form class="member-modal-content animate" action="#">
+                    <form class="member-modal-content animate" id="member-form" action="#">
                         <div class="container">
                             
-                            
+                          <div class="img-modal" style="display: inline;">
                             <div class="imgcontainer">
-                                <label for="member-img">Add Image</label>
-                                <div class="upload-img-container">
-                                    <img id="my-img2" src="#" alt=". no image yet" />
-                                </div>
-                                Select image to upload:
-                                <input type="file" id="member-img" accept="image/gif, image/jpeg, image/png" onchange="readURL2(this)">
+                                <label for="member-img">
+                                    <img id="my-img2" src="img/create-group/add-image.png" alt=". no image yet" />
+                                </label>
+                                <input type="file" class="disp-none" id="member-img" accept="image/gif, image/jpeg, image/png" onchange="readURL2(this)">
                             </div>
+                          </div>
                             
-                            
+                            <div class="details-modal" style="display: inline;">
+    
                             <div class="member-details-container">
     
     
@@ -156,16 +158,16 @@
                                 <label for="member-age"><b>Age</b></label>
                                 <input type="text" maxlength="2" id="member-age">
     
-                                <label><b>Gender</b></label> <br>
+                                <label><b>Gender</b></label>
                                 <input type="radio" name="gender" id="male" checked> <label for="male"> Male  </label>
                                 <input type="radio" name="gender" id="female"> <label for="female"> Female</label><br>
     
                                 <label for="member-details"><b>Details</b></label>
                                 <textarea placeholder="Enter Details" id="member-details"></textarea>
-    
                                 
                             </div>
                             
+                            </div>
                             
                         </div>
                         <div class="container">

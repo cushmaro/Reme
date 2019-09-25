@@ -49,7 +49,7 @@
     padding: 5px;
     border: 1px solid #888;
     width: 60%;
-    min-width: 400px;
+    min-width: 450px;
 
     .create-title{
       text-align: center;
@@ -59,14 +59,20 @@
       padding: 16px;
     }
 
-    .top-part label{
-      margin-top: 0 !important;
+    .top-part {
+      padding: 10px;
+      label {
+        margin-top: 0 !important;
+      }
+    }
+
+    .bottom-part{
+      padding: 10px;
     }
 
 
     .group-input {
       display: block;
-      margin-bottom: 10px;
       width: 100%;
     }
 
@@ -87,25 +93,33 @@
 
     label{
       display: block;
-      margin-top: 30px;
+      margin-top: 40px;
     }
+  }
 
 
-    #submit-group{
-      width: 100%;
-    }
+}
+#my-img{
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 
-    .upload-img-container{
-      height: 152px;
-      width:152px;
-      border: 1px dashed black;
-      margin: 10px;
-    }
+  &:hover{
+    @include transition();
+    transform: scale(0.95);
   }
 }
 
 .complete-border{
   border: 1.5px solid greenyellow !important;
+}
+
+.disp-none{
+  display: none !important;
+}
+
+#group-name{
+  width: 65%;
 }
 
 
@@ -147,7 +161,15 @@ input[type=text]{
 }
 
 .member-details-container{
+
+  input{
+    display: inline-block;
+  }
   top: 0;
+}
+
+#member-age{
+  width: 40px;
 }
 
 
@@ -188,8 +210,21 @@ span.psw {
     height: 302px;
     width: 262px;
   }
-
 }
+
+#my-img2{
+    width: 200px;
+    height: 190px;
+    cursor: pointer;
+
+    &:hover{
+      @include transition();
+      transform: scale(0.95);
+    }
+}
+
+
+
 
 /* Add Zoom Animation */
 .animate {

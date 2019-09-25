@@ -2731,7 +2731,7 @@ h6 {
   padding: 5px;
   border: 1px solid #888;
   width: 60%;
-  min-width: 400px;
+  min-width: 450px;
 }
 .new-group-section .new-group .create-title {
   text-align: center;
@@ -2740,12 +2740,17 @@ h6 {
   background-color: #fdbb00;
   padding: 16px;
 }
+.new-group-section .new-group .top-part {
+  padding: 10px;
+}
 .new-group-section .new-group .top-part label {
   margin-top: 0 !important;
 }
+.new-group-section .new-group .bottom-part {
+  padding: 10px;
+}
 .new-group-section .new-group .group-input {
   display: block;
-  margin-bottom: 10px;
   width: 100%;
 }
 .new-group-section .new-group .group-name-part {
@@ -2761,20 +2766,29 @@ h6 {
 }
 .new-group-section .new-group label {
   display: block;
-  margin-top: 30px;
+  margin-top: 40px;
 }
-.new-group-section .new-group #submit-group {
-  width: 100%;
+
+#my-img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
 }
-.new-group-section .new-group .upload-img-container {
-  height: 152px;
-  width: 152px;
-  border: 1px dashed black;
-  margin: 10px;
+#my-img:hover {
+  transition: all 300ms linear 0s;
+  transform: scale(0.95);
 }
 
 .complete-border {
   border: 1.5px solid greenyellow !important;
+}
+
+.disp-none {
+  display: none !important;
+}
+
+#group-name {
+  width: 65%;
 }
 
 /*------------------FORM END---------------------*/
@@ -2811,6 +2825,13 @@ input[type=text] {
 
 .member-details-container {
   top: 0;
+}
+.member-details-container input {
+  display: inline-block;
+}
+
+#member-age {
+  width: 40px;
 }
 
 .container {
@@ -2858,6 +2879,16 @@ span.psw {
   border: 1px dashed black;
   height: 302px;
   width: 262px;
+}
+
+#my-img2 {
+  width: 200px;
+  height: 190px;
+  cursor: pointer;
+}
+#my-img2:hover {
+  transition: all 300ms linear 0s;
+  transform: scale(0.95);
 }
 
 /* Add Zoom Animation */

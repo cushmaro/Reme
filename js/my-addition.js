@@ -1,6 +1,7 @@
 /*====================VARIABLES=====================*/
 
 let modal = document.getElementById('id-modal');
+let memberForm = document.getElementById('member-form');
 let addMemberBtn = document.getElementById('add-member');
 let modalCancelBtn =document.getElementById(  'cancel-member');
 let memberName = document.getElementById('mfname');
@@ -52,12 +53,12 @@ function addToMemberList() {
   let li = document.createElement('li');
 
   if (memberName.value !== "" ) {
-    
   li.innerText = memberName.value;
   memberList.appendChild(li);
 
-  hideModal();
+  resetModal(memberForm);
 
+    hideModal();
   }
   else {
     alert("Please enter Name!");
@@ -115,9 +116,7 @@ function validationAge() {
   }
 }
 
-function validNotEmpty() {
-  let input = memberName.value;
-  if (input === ""){
-    alert("Please enter Name!");
-  }
+function resetModal(form) {
+  form.reset();
+  $('#my-img2').attr('src', '#');
 }
