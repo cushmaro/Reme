@@ -2836,7 +2836,8 @@ input[type=text] {
 }
 
 #member-age {
-  width: 40px;
+  width: 50px;
+  padding-left: 5px;
 }
 
 .container {

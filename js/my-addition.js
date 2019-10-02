@@ -97,8 +97,8 @@ function readURL2(input) {
     reader.onload = function (e) {
       $('#my-img2')
         .attr('src', e.target.result)
-        .width(260)
-        .height(300);
+        .width(200)
+        .height(190);
     };
 
     reader.readAsDataURL(input.files[0]);
