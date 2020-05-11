@@ -5,14 +5,16 @@
 	min-height: 900px;
 	display: flex;
 	background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)),
-		url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+	url(../img/banner/home-banner.jpg) no-repeat scroll center center;
 	background-size: cover;
+
 	.banner_inner {
 		width: 100%;
 		display: flex;
 		.container {
 			vertical-align: middle;
 			align-self: center;
+
 		}
 		.banner_content {
 			color: #fff;
@@ -34,7 +36,6 @@
 				font-weight: bold;
 				font-family: $title-font;
 				line-height: 70px;
-				text-transform: uppercase;
 				margin-bottom: 20px;
 			}
 			p {
@@ -47,6 +48,12 @@
 					margin-right: 0;
 					margin-bottom: 15px;
 				}
+			}
+
+			.banner_content_text{
+				opacity: 0.3;
+				margin-bottom: 200px;
+
 			}
 		}
 	}
@@ -94,3 +101,7 @@
 
 /* End Home Banner Area css
 ============================================================================================ */
+
+
+//my addition
+

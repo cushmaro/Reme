@@ -1,0 +1,263 @@
+
+
+/*===================CREATE GROUP=================*/
+
+
+//
+.new-group-container, .members-container{
+  margin: 10px 10px 30px 50px;
+
+}
+
+.new-group-section, .group-members-section{
+  display: inline-block;
+  width: 49%;
+}
+
+
+/*------------------MEMBER START-----------------*/
+
+.group-members-section{
+  float: right;
+
+  .member-list-container{
+    padding: 20px;
+  }
+
+  .fancy-group-name{
+    font-size: 25px;
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+}
+/*------------------MEMBER END-----------------*/
+
+
+
+/*------------------FORM START-----------------*/
+
+.new-group-section{
+
+
+  .new-group{
+
+    //form
+    color: $primary-color;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 60%;
+    min-width: 450px;
+
+    .create-title{
+      text-align: center;
+      vertical-align: center;
+      color: #fff;
+      background-color: $primary-color2;
+      padding: 16px;
+    }
+
+    .top-part {
+      padding: 10px;
+      label {
+        margin-top: 0 !important;
+      }
+    }
+
+    .bottom-part{
+      padding: 10px;
+    }
+
+
+    .group-input {
+      display: block;
+      width: 100%;
+    }
+
+    .group-name-part{
+      width: 49%;
+      float: right;
+    }
+
+
+    #add-member{
+      cursor: pointer;
+      font-size: 25px;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+
+    label{
+      display: block;
+      margin-top: 40px;
+    }
+  }
+
+
+}
+#my-img{
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+
+  &:hover{
+    @include transition();
+    transform: scale(0.95);
+  }
+}
+
+.complete-border{
+  border: 1.5px solid greenyellow !important;
+}
+
+.disp-none{
+  display: none !important;
+}
+
+#group-name{
+  width: 65%;
+}
+
+
+/*------------------FORM END---------------------*/
+
+
+/*------------------MODAL START-----------------*/
+
+
+/* Full-width input fields */
+input[type=text]{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#submit-member, #cancel-member{
+  width: 49%;
+}
+
+#cancel-member{
+  float: right;
+}
+
+#member-details{
+  width: 100%;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer, .member-details-container{
+  display: inline-block;
+  margin: 24px 0 12px 0;
+  position: relative;
+  width: 45%;
+}
+
+.imgcontainer{
+  width: 35%;
+}
+
+.img-modal, .details-modal{
+  display: inline;
+}
+
+.member-details-container{
+  input{
+    display: inline-block;
+  }
+}
+
+#member-age{
+  width: 50px;
+  padding-left: 5px;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.member-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.member-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  min-width: 700px;
+
+  .upload-img-container{
+    border: 1px dashed black;
+    height: 302px;
+    width: 262px;
+  }
+}
+
+#my-img2{
+    width: 200px;
+    height: 190px;
+    cursor: pointer;
+
+    &:hover{
+      @include transition();
+      transform: scale(0.95);
+    }
+}
+
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*------------------MODAL END-----------------*/

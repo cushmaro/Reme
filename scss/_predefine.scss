@@ -1,5 +1,5 @@
 .section_gap {
-	padding: 130px 0px;
+	padding: 0px;
 	@media (max-width: 991px) {
 		padding: 70px 0;
 	}
@@ -24,7 +24,7 @@
 ============================================================================================ */
 .main_title {
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	@media (max-width: 991px) {
 		margin-bottom: 40px;
 	}
@@ -73,15 +73,52 @@
 	cursor: pointer;
 	@include transition();
 	&:hover {
-		background: transparent;
-		color: $primary-color;
+		transform: scale(0.95);
+		color: #fff;
+		background-color: $primary-color;
 	}
 	&.yellow_btn {
 		background: $primary-color2 !important;
 		border: 1px solid $primary-color2 !important;
-		color: #000000;
+		color: #fff;
 		&:hover {
-			background: transparent !important;
+			transform: scale(0.95);
+			color: #fff;
+			background-color: $primary-color2 !important;
 		}
 	}
 }
+
+.create-group-btn {
+	padding: 5px 50px;
+	font-size: 20px;
+	margin-bottom: 50px;
+	margin-left: 39%;
+}
+
+.function_btn {
+	display: inline-block;
+	background: $primary-color;
+	padding: 0px 50px;
+	color: #fff;
+	font-family: $text-font;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 48px;
+	border: 1px solid $primary-color;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include transition();
+	margin-left: 13%;
+
+	&:hover {
+		transform: scale(0.95);
+		color: #fff;
+		background-color: $primary-color;
+	}
+}
+
+
